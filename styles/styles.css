@@ -93,18 +93,14 @@ h5 {
   display: flex;
 }
 
-.all-content ul {
-  display: flex;
-  flex-flow: row wrap;
-}
-
 .global-header {
   display: flex;
-  align-items: center;
   padding-left: 215px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
 }
+
+
 
 .logo-section {
   font-family: 'Raleway';
@@ -145,25 +141,60 @@ h5 {
   color: var(--blue-theme-color);
 }
 
-.global-header .nav-list ul {
+.logo-section {
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+
+.nav-list ul {
   display: flex;
   padding-inline-start: 0;
 }
 
-.global-header .nav-list ul li+li {
+.nav-list ul li+li {
   margin-left: 50px;
 }
 
+
 .nav-list {
-  margin-left: 91px;
+  margin-left: 93px;
+  margin-top: 32px;
 }
 
-.global-header .header-info-contacts {
+.nav-list ul {
+  display: flex;
+  align-items: baseline;
+}
+
+.header-info-contacts {
+  display: flex;
+  flex-direction: row;
   margin-left: 385px;
+  margin-top: 32px;
 }
 
-.global-header .header-info-contacts a+a {
+.header-info-contacts a+a {
   margin-left: 40px;
+}
+
+.header-info-contacts div+a {
+  margin-left: 40px;
+}
+
+.header-info-contacts .mail-logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-list .nav-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.mail-logo img {
+  margin-top: 4px;
+  margin-left: 20px;
 }
 
 .top-banner {
@@ -376,11 +407,12 @@ h5 {
   display: flex;
   justify-content: center;
   padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 34px;
 }
 
 .filter-buttons ul {
   gap: 8px;
+  padding-right: 35px;
 }
 
 .filter-buttons button {
@@ -414,10 +446,10 @@ h5 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   list-style: none;
-  padding-left: 215px;
-  padding-bottom: 94px;
   justify-content: space-between;
   gap: 30px;
+  padding-left: 215px;
+  padding-bottom: 94px;
 }
 
 .all-content li {
@@ -457,4 +489,14 @@ h5 {
 .content-name p {
   padding-left: 24px;
   padding-top: 4px;
+}
+
+.filter-buttons .button-with-logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-with-logo img {
+  display: flex;
+  align-self: center;
 }
